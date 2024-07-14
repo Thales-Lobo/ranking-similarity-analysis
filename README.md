@@ -65,8 +65,14 @@ This project implements an algorithm to compare ranking lists using Weighted Ken
 
 4. Run the analysis from `src/main.py`:
 
-    ```python
-    python src/main.py
+    ```bash
+    ./run.sh
+    ```
+
+5. You can clean the images folder if you want:
+
+    ```bash
+    ./run.sh --clean|-c
     ```
 
 ## Contact
