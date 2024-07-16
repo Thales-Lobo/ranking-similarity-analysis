@@ -14,13 +14,17 @@ Analyze and visualize the similarity of ranking lists using Weighted Spearman's 
 
 ## Introduction
 This project implements an algorithm to compare ranking lists using Weighted Spearman's Rank Correlation. It calculates weights, evaluates similarity scores, and visualizes the results through various plots. The algorithm considers the importance of specific positions in the ranking and provides a clear way to interpret the scores.
-
 ### Mathematical Formulation
+
 The Weighted Spearman's Rank Correlation is defined as:
 
 ![Equation](https://miro.medium.com/v2/resize:fit:688/format:webp/1*CCl_9w_HKMZp8lFmrMz9FQ.png)
 
-- A `scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. Default value is set to 3.
+- **Weights:** The correlation calculation incorporates weights (`w_i`) assigned to each position in the vectors. These weights reflect the importance of different ranks in the correlation calculation.
+  
+- **Scale Factor:** A `scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. The default value is set to 3.
+  
+- **Weight Distribution:** The weights are designed to emphasize positions at the beginning and end of the vectors more than those in the middle. This distribution ensures that ranks at these critical positions contribute more significantly to the correlation score.
 
 ## Features
 - Calculate Weighted Spearman's Rank Correlation.
