@@ -6,6 +6,7 @@ Analyze and visualize the similarity of ranking lists using Weighted Spearman's 
 
 ## Table of Contents
 - 📚 [Introduction](#introduction)
+- ♾️ [Mathematical Formulation](#mathematical-formulation)
 - ✨ [Features](#features)
 - 🛠 [Installation](#installation)
 - 🚀 [Usage](#usage)
@@ -16,16 +17,10 @@ This project implements an algorithm to compare ranking lists using Weighted Spe
 
 ### Mathematical Formulation
 The Weighted Spearman's Rank Correlation is defined as:
-$$
-\rho = 1 - \frac{6 \sum_{i=1}^{n} w_i (r_i - s_i)^2}{n (n^2 - 1)}
-$$
-where:
-- \( n \) is the number of elements in the vectors,
-- \( r_i \) and \( s_i \) are the ranks of the \( i \)-th element in the reference and comparison vectors, respectively,
-- \( w_i \) are the weights assigned to each position in the vectors.
 
-### Scale Factor
-A `scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. Default value is set to 3.
+![Equation](https://miro.medium.com/v2/resize:fit:688/format:webp/1*CCl_9w_HKMZp8lFmrMz9FQ.png)
+
+- A `scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. Default value is set to 3.
 
 ## Features
 - Calculate Weighted Spearman's Rank Correlation.
