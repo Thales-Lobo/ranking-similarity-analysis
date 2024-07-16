@@ -1,6 +1,8 @@
 import json
+from typing import Optional
 
-def load_json_data(file_path, key=None):
+def load_json_data(file_path: str, 
+                    key: Optional[str] = None) -> json :
     """
     Loads JSON data from a file.
 

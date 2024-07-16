@@ -31,7 +31,7 @@ def main():
     responses = load_json_data(responses_file, 'responses')
 
     # Calculate scores
-    scores = calculate_scores(reference_vector, responses)
+    scores = calculate_scores(reference_vector, responses, weight_mode='variable')
 
     # Plot scores and responses
     plot_scores(scores)

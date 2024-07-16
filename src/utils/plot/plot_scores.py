@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
+from typing import Dict, List
 import numpy as np
 import os
 
-def plot_scores(scores, dpi=500):
+def plot_scores(scores: List[Dict],
+                dpi: int = 500) -> None:
     """
     Plot a horizontal bar chart showing scores with fields in parentheses below names, sorted by scores in descending order.
 
@@ -36,7 +37,7 @@ def plot_scores(scores, dpi=500):
     ax.set_yticklabels([f"{names[i]}\n({fields[i]})" for i in range(len(scores))], fontsize=12)
     ax.invert_yaxis()
     ax.set_xlabel('Scores (%)', fontsize=14)
-    ax.set_title('Scores by Name and Field', fontsize=16)
+    ax.set_title('Top Scores', fontsize=16)
 
     # Highlight the name of each person in bold
     for tick_label in ax.get_yticklabels():
