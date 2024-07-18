@@ -34,7 +34,7 @@ def plot_scores(scores: List[Dict],
     bars = ax.barh(y_pos, scores, align='center', color='#6BAED6')
     
     ax.set_yticks(y_pos)
-    ax.set_yticklabels([f"{names[i]}\n({fields[i]})" for i in range(len(scores))], fontsize=12)
+    ax.set_yticklabels([f"{names[i]}" for i in range(len(scores))], fontsize=12)
     ax.invert_yaxis()
     ax.set_xlabel('Scores (%)', fontsize=14)
     ax.set_title('Top Scores', fontsize=16)

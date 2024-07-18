@@ -22,8 +22,8 @@ The Weighted Spearman's Rank Correlation is defined as:
 
 - **Weights:** The correlation calculation incorporates weights (`w_i`) assigned to each position in the vectors. These weights reflect the importance of different ranks in the correlation calculation.
   
-- **Scale Factor:** A `scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. The default value is set to 3.
-  
+- **Scale Factor:** A `linear_scale_factor` is applied to adjust the numerator of the correlation calculation. This factor influences the final correlation value, allowing for customization based on specific needs. The default value is set to 2.5. In the same way, an `exponencial_scale_factor` is also applied to further adjust the numerator of the correlation calculation. The default value is set to 2.0.
+
 - **Weight Distribution:** The weights are designed to emphasize positions at the beginning and end of the vectors more than those in the middle. This distribution ensures that ranks at these critical positions contribute more significantly to the correlation score.
 
 ## Features

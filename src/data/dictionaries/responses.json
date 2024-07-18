@@ -38,7 +38,7 @@
     {
       "name": "Maicon Iago",
       "answer_vector": [1, 2, 7, 6, 4, 5, 8, 3],
-      "field": "Outro"
+      "field": "Outros"
     },
     {
       "name": "Sarah Magna",
@@ -64,6 +64,16 @@
       "name": "Lucas Ferreira",
       "answer_vector": [2, 3, 1, 6, 5, 7, 4, 8],
       "field": "CentraleSupélec"
+    },
+    {
+      "name": "Danilo Augusto",
+      "answer_vector": [2, 3, 1, 8, 6, 4, 7, 5],
+      "field": "Outros"
+    },
+    {
+      "name": "Raissa Sabino",
+      "answer_vector": [2, 3, 1, 5, 6, 7, 4, 8],
+      "field": "Outros"
     }
   ]
 }

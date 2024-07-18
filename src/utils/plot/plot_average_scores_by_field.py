@@ -38,7 +38,7 @@ def plot_average_scores_by_field(scores: List[Dict],
     # Add annotations to bars
     for bar, count, avg in zip(bars, response_counts, avg_scores):
         height = bar.get_height()
-        ax.annotate(f'({avg:.1f}%)\n({count})',
+        ax.annotate(f'{avg:.1f}%\n({count})',
                     xy=(bar.get_x() + bar.get_width() / 2, height),
                     xytext=(0, 3),
                     textcoords="offset points",
